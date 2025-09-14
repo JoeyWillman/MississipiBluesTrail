@@ -26,7 +26,7 @@ html, body {
 }
 
 .nav-logo {
-  height: 70px;
+  height: 60px;
 }
 
 #navbar h1 {
@@ -173,6 +173,7 @@ html, body {
     border: none;
     font-size: 1.5rem;
     color: #eee;
+    
   }
 
   .nav-links {
