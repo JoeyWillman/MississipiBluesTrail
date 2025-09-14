@@ -204,6 +204,8 @@ html, body {
   border: 3px solid #0044cc;     /* blues blue border */
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  max-width: 400px;              /* desktop default */
+  width: auto;
 }
 
 .leaflet-popup-content {
@@ -214,6 +216,14 @@ html, body {
   color: #222;                  /* dark body text */
   line-height: 1.6;
 }
+
+/* Mobile popup adjustment */
+@media (max-width: 768px) {
+  .leaflet-popup-content-wrapper {
+    max-width: 85vw;            /* responsive: shrink to 85% of screen */
+  }
+}
+
 
 .popup-card h3 {
   font-family: 'Rye', cursive;   /* same retro font as nav bar */
