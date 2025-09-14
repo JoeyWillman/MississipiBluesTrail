@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mississippi Blues Trail Map</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-left">
+      <img src="assets/images/blues-logo.png" alt="Mississippi Blues Trail Logo" class="nav-logo">
+      <h1>
+        <span class="blues">Mississippi</span>
+        <span class="trail">Blues Trail</span>
+      </h1>
+    </div>
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Map</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Splash Screen -->
+  <div id="splash">
+    <div class="splash-card">
+      <img src="assets/images/blues-logo.png" alt="Blues Trail Logo" class="splash-logo">
+      <h2>Welcome to the Mississippi Blues Trail</h2>
+      <p class="splash-text">
+        your unforgettable journey into the land that spawned the single most important root source of modern popular music. Whether you’re a die-hard blues fan or a casual traveler in search of an interesting trip, you’ll find facts you didn’t know, places you’ve never seen, and you’ll gain a new appreciation for the area that gave birth to the blues.
+      </p>
+      <button id="enter-btn">Enter Map</button>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div id="map"></div>
+
+  <div id="info-overlay" class="info-overlay">
+  <div class="info-content">
+    <button class="info-close" aria-label="Close">&times;</button>
+    <h3>About the Mississippi Blues Trail</h3>
+    <p>
+      The Mississippi Blues Trail was created by the Mississippi Blues Commission in 2006 
+      to place interpretive markers at the most notable historical sites related to the birth, 
+      growth, and influence of the blues throughout (and in some cases beyond) the state of Mississippi.
+    </p>
+    <p>
+      Within the state the trail extends from the Gulf Coast north along several highways to 
+      Natchez, Vicksburg, Jackson, Leland, Greenwood, Clarksdale, Tunica, Grenada, Oxford, 
+      Columbus, and Meridian. The largest concentration of markers is in the Mississippi Delta, 
+      but other regions of the state are also commemorated. 
+    </p>
+    <p>
+      Several out-of-state markers have also been erected where blues with Mississippi roots has 
+      had significance, including Waterloo, Ontario, Memphis, Tennessee, and Chicago, Illinois.
+    </p>
+  </div>
+</div>
+
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
